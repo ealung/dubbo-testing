@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://dubbok.hz.netease.com/dubbo.xsd">
+
+    <dubbo:reference id="projectSimpleCompose" check="false"
+                     interface="com.netease.kada.itemcenter.compose.project.ProjectSimpleCompose"
+                     version="1.0.0-${spring.profiles.active}"/>
+</beans>
